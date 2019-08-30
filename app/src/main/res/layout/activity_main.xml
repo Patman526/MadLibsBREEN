@@ -8,10 +8,10 @@
     android:background="@color/colorBackground">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mad Libs"
+        android:text="The Angry Libs"
         android:textSize="150px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -30,7 +30,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle"
         app:layout_constraintVertical_bias="0.1" />
 
     <TextView
@@ -48,12 +48,12 @@
         app:layout_constraintVertical_bias="0.05" />
 
     <TextView
-        android:id="@+id/textNumber"
+        android:id="@+id/textVerb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Number:"
+        android:text="Verb:"
         android:textSize="30dp"
-        android:paddingRight="15dp"
+        android:paddingRight="55dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
@@ -67,11 +67,12 @@
         android:layout_height="wrap_content"
         android:text="Name:"
         android:textSize="30dp"
+        android:paddingRight="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textNumber"
+        app:layout_constraintTop_toBottomOf="@+id/textVerb"
         app:layout_constraintVertical_bias="0.05" />
 
     <EditText
@@ -82,7 +83,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textAdjective"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle"
         app:layout_constraintVertical_bias="0.1" />
 
     <EditText
@@ -97,14 +98,37 @@
         app:layout_constraintVertical_bias="0.05" />
 
     <EditText
-        android:id="@+id/editNumber"
+        android:id="@+id/editVerb"
         android:layout_width="150dp"
         android:layout_height="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textNumber"
+        app:layout_constraintStart_toEndOf="@+id/textVerb"
         app:layout_constraintTop_toBottomOf="@+id/editNoun"
         app:layout_constraintVertical_bias="0.05" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textName"
+        app:layout_constraintTop_toBottomOf="@+id/editVerb"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mad this lib"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle"
+        app:layout_constraintVertical_bias="0.7"
+        android:onClick="sendInfo"/>
 
 </android.support.constraint.ConstraintLayout>

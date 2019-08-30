@@ -13,22 +13,27 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    /*
 
     public void sendInfo(View v){
-        EditText edit = (EditText) findViewById(R.id.myName);
-        EditText myAge = (EditText) findViewById(R.id.myAge);
+        EditText editAdjective = findViewById(R.id.editAdjective);
+        EditText editNoun = findViewById(R.id.editNoun);
+        EditText editVerb = findViewById(R.id.editVerb);
+        EditText editName = findViewById(R.id.editName);
 
-        String myNameStr = myName.getText().toString();
-        String myAgeStr = myAge.getText().toString();
+        String adjectiveStr = editAdjective.getText().toString();
+        String nounStr = editNoun.getText().toString();
+        String verbStr = editVerb.getText().toString();
+        String nameStr = editName.getText().toString();
 
-        Intent intent = new Intent(this, InfoActivity.class);
+        Intent intent = new Intent(this, TheLib.class);
 
-        intent.putExtra(InfoActivity.MY_NAME, myNameStr);
-        intent.putExtra(InfoActivity.MY_AGE, myAgeStr);
+        intent.putExtra(TheLib.ADJECTIVE, adjectiveStr);
+        intent.putExtra(TheLib.NOUN, nounStr);
+        intent.putExtra(TheLib.VERB, verbStr);
+        intent.putExtra(TheLib.NAME, nameStr);
 
         startActivity(intent);
     }
-    */
-    
+
+
 }
